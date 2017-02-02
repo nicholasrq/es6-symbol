@@ -2,4 +2,4 @@
 
 'use strict';
 
-module.exports = typeof Symbol === 'function' && typeof Symbol() === 'symbol';
+module.exports = typeof Symbol === 'function' && Object.prototype.toString.call(Symbol.prototype) === '[object Symbol]';
